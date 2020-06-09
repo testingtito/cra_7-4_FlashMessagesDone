@@ -5,9 +5,12 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import About from './components/About';
 import Terms from './components/Terms';
+import CreatePost from './components/CreatePost';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import Axios from 'axios';
+Axios.defaults.baseURL = 'http://localhost:9876'
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(Boolean(localStorage.getItem("data_token")));
@@ -20,6 +23,9 @@ const App = () => {
         </Route>
         <Route path='/about-us'>
           <About />
+        </Route>
+        <Route path='/create-post'>
+          <CreatePost />
         </Route>
         <Route path='/terms'>
           <Terms />

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const HeaderLoggedIn = ({ setLoggedIn }) => {
+
   const handleLogout = () => {
     setLoggedIn(false);
     localStorage.removeItem("data_token");
@@ -18,7 +19,7 @@ const HeaderLoggedIn = ({ setLoggedIn }) => {
         <span className="chat-count-badge text-white"> </span>
       </span>
       <Link to="#" className="mr-2">
-        <img className="small-header-avatar" src={localStorage.getItem("data_avatar")} />
+        <img className="small-header-avatar" src={localStorage.getItem("data_avatar")} alt="pic" />
       </Link>
       <Link className="btn btn-sm btn-success mr-2" to="/create-post">
         Create Post

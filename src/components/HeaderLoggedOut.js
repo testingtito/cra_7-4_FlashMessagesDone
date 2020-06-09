@@ -8,7 +8,7 @@ const HeaderLogOut = ({ setLoggedIn }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const response = await Axios.post("http://localhost:9876/login", { username, password })
+      const response = await Axios.post("/login", { username, password })
       if (response.data) {
         localStorage.setItem("data_token", response.data.token);
         localStorage.setItem("data_username", response.data.username);
