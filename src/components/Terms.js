@@ -1,9 +1,9 @@
 import React from 'react'
-import Page from './Page';
+import Container from './Container';
 
 const Terms = () => {
   return (
-    <Page title="Terms and Conditions">
+    <Container title="Terms and Conditions">
       <div className="container container--narrow py-md-5">
         <h2>Our Terms &amp; Conditions</h2>
         <p className="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum labore quisquam vel id dicta fuga! Ducimus, quo. Dolore commodi aliquid error veritatis consequuntur, excepturi cumque fuga eum incidunt doloremque?</p>
@@ -12,7 +12,7 @@ const Terms = () => {
         <h3>Details</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae laboriosam distinctio atque sint earum? Temporibus, voluptas aspernatur aliquam nisi sed harum laborum, nemo odio animi officia quisquam. Veniam, natus reprehenderit.</p>
       </div>
-    </Page>
+    </Container>
   )
 }
 

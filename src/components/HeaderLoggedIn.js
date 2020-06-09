@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const HeaderLoggedIn = ({ setLoggedIn }) => {
   const handleLogout = () => {
     setLoggedIn(false);
-    localStorage.removeItem("complexappToken");
-    localStorage.removeItem("complexappUsername");
-    localStorage.removeItem("complexappAvatar");
+    localStorage.removeItem("data_token");
+    localStorage.removeItem("data_username");
+    localStorage.removeItem("data_avatar");
   }
   return (
     <div className="flex-row my-3 my-md-0">
@@ -18,7 +18,7 @@ const HeaderLoggedIn = ({ setLoggedIn }) => {
         <span className="chat-count-badge text-white"> </span>
       </span>
       <Link to="#" className="mr-2">
-        <img className="small-header-avatar" src={localStorage.getItem("complexappAvatar")} />
+        <img className="small-header-avatar" src={localStorage.getItem("data_avatar")} />
       </Link>
       <Link className="btn btn-sm btn-success mr-2" to="/create-post">
         Create Post

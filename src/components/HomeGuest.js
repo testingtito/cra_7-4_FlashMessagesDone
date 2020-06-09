@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Page from './Page';
+import Container from './Container';
 import Axios from 'axios';
 
 const HomeGuest = () => {
@@ -23,7 +23,7 @@ const HomeGuest = () => {
     }
   }
   return (
-    <Page title="Welcome!" wide={true}>
+    <Container title="Welcome!" wide={true}>
       <div className="container py-md-5">
         <div className="row align-items-center">
           <div className="col-lg-7 py-3 py-md-5">
@@ -57,7 +57,7 @@ const HomeGuest = () => {
           </div>
         </div>
       </div>
-    </Page>
+    </Container>
   )
 }
 

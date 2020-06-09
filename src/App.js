@@ -10,7 +10,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(Boolean(localStorage.getItem("complexappToken")));
+  const [loggedIn, setLoggedIn] = useState(Boolean(localStorage.getItem("data_token")));
   return (
     <BrowserRouter>
       <Header loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
