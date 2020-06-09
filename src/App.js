@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Terms from './components/Terms';
 import CreatePost from './components/CreatePost';
+import ViewSinglePost from './components/ViewSinglePost';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.css';
@@ -26,6 +27,9 @@ const App = () => {
         </Route>
         <Route path='/create-post'>
           <CreatePost />
+        </Route>
+        <Route path='/post/:id'>
+          <ViewSinglePost />
         </Route>
         <Route path='/terms'>
           <Terms />
