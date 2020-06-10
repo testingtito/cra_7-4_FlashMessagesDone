@@ -17,6 +17,7 @@ const CreatePost = (props) => {
         token: localStorage.getItem("data_token")
       })
       console.log("New post was created.");
+      props.addFlashMessage("Congrats!!!");
       // Redirect to new post url
       props.history.push(`/post/${response.data}`)
     } catch (e) {
